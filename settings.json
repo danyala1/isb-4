@@ -1,0 +1,8 @@
+{
+    "hash":"adc0e9f7627c5fd35d240a71e1f2b895f77dec86c543452a2986ee6c736130bee896f104f5b12aa36276f0cc6b4ffcf22ccaaee905ba63f8d9fe31cdc9d034ab",
+    "last_numbers":"2305",
+    "bins":[524468, 528041, 538994, 548387, 551960, 553420, 553691, 557073],
+    "card_number":"data/card_number.txt",
+    "stats":"data/stats.csv",
+    "graph":"data/graph.jpg"
+}
