@@ -4,6 +4,12 @@ import matplotlib.pyplot as plt
 
 
 def create_stats(statistics: dict, file_name: str) -> None:
+    """Draws and saves the plot based on the statistic
+
+    Args:
+        statistic(dict): data for the plot
+        file_name(str): path for saving
+    """
     fig = plt.figure(figsize=(30, 5))
     plt.ylabel("Time")
     plt.xlabel("Processes")
@@ -16,6 +22,13 @@ def create_stats(statistics: dict, file_name: str) -> None:
 
 
 def write_stats(processes: int, time: float, file_name: str) -> None:
+    """Writes statistic to the file 
+
+    Args: 
+        processes(int): number of processes
+        time(float): executing time
+        file_name(str): name of the file 
+    """
     try:
         with open(file_name, 'a', newline='') as f:
             writer = csv.writer(f)
@@ -27,6 +40,14 @@ def write_stats(processes: int, time: float, file_name: str) -> None:
 
 
 def load_stats(file_name: str) -> dict:
+    """Loads statistics from the file 
+
+    Args: 
+        file_name(str): name of the file 
+
+    Returns: 
+        dict: dict with statistics from the file
+    """
     try:
         with open(file_name, 'r') as f:
             reader = csv.reader(f)
